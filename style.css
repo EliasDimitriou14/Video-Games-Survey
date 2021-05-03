@@ -1,0 +1,90 @@
+body{
+  background:linear-gradient(to right, rgb(16,99,143), rgb(17,115,166));
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#survey-form{
+  background: #0b3b54;
+  display:block;
+  width: 40%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:25px;
+  margin-bottom:25px;
+  border-radius: 5px;
+  padding:15px;
+}
+
+input[type=text], input[type=email], input[type=number],textarea{
+  border-radius:5px;
+  margin-top:10px;
+  margin-bottom:20px;
+  width:90%;
+  border:0;
+  padding:10px;
+  color:gray;
+}
+
+
+select{
+  border-radius:5px;
+  margin-top:5px;
+  margin-bottom:20px;
+  padding:10px;
+  width: 93%;
+  border:none;
+  color:gray;
+}
+
+input[type=radio], input[type=checkbox],textarea{
+  margin-top:8px;
+  margin-bottom:5px;
+}
+
+input[type=submit]{
+  border-radius:5px;
+  margin-top:10px;
+  margin-bottom:20px;
+  width:93%;
+  border:0;
+  padding:15px;
+  color:white;
+  background:#58c479;
+}
+
+input[type=text]:focus, input[type=email]:focus,input[type=number]:focus,select:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  outline:none !important;
+}
+
+textarea:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  outline:none !important;
+  color:black;
+}
+
+input[type=submit]:focus{
+  box-shadow: 0 0 5px rgba(44, 242, 104, 1);
+  outline:none !important;
+}
+
+label{
+  font-weight:bold;
+  margin-top:10px;
+}
+
+#container{
+  margin-left:8%;
+  margin-right:8%;
+  width:90%;
+  text-align:left;
+}
+
+@media only screen and (max-width: 815px) {
+  #survey-form{
+    width:80vw;
+    overflow-x:hidden;
+  }
+}

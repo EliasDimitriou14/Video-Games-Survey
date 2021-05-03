@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Video Games Survey Form</h1>
+    <i><p id="description">Thank you for taking the time to tell us about your video games experience</p></i>
+    <form id="survey-form">
+      <div id="container">
+        <label id="name-label" for="name">Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" required><br>  
+        
+        <label id="email-label" for="email">Email</label><br>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        
+        <label id="number-label" for="number">Age(optional)</label><br>
+        <input id="number" type="number" placeholder="Age" min="10" max="99" required><br>
+        
+        <label for="dropdown">Which option describes your favorite video games category?</label><br>
+        <select id="dropdown" required>
+          <option value="" disabled selected>Select video game category</option>
+          <option value="Open World Games" >Open World Games</option>
+          <option value="FPS Games" >FPS Games</option>
+          <option value="Sports Games" >Sports Games</option>
+          <option value="Indie Games" >Indie Games</option>
+          <option value="Strategy Games" >Strategy Games</option>
+          <option value="Other" >Other</option>
+        </select><br>
+        
+        <label for="days">How many times do you play video games on average every week?</label><br>
+        <input id="Once" type="radio" name="days" value="Once a week" checked>
+        <label for="Once" >Once a week</label><br>
+        
+        <input id="2-3 times" type="radio" name="days" value="2-3 times a week">
+        <label for="2-3 times" >2-3 times a week</label><br>
+        
+        <input id="4-5 times" type="radio" name="days" value="4-5 times a week">
+        <label for="4-5 times" >4-5 times a week</label><br>   
+        
+        <input id="everyday" type="radio" name="days" value="everyday" >
+        <label for="everyday" >Everyday</label><br><br>
+        
+        <label for="platforms-dropdown">On what platform do you ususally play?</label><br>
+        <select id="platforms-dropdown" required>
+          <option value="" disabled selected>Select platform</option>
+          <option value="Plastation" >Playstation</option>
+          <option value="Xbox" >Xbox</option>
+          <option value="Nintendo Switch" >Nintendo Switch</option>
+          <option value="PC" >PC</option>
+          <option value="Other" >Other</option>
+        </select><br>
+        
+        <label>What would you like to see more at games?</label><br>
+        
+        <input id="Bigger open worlds" type="checkbox" value="Bigger open worlds">
+        <label for="Bigger open worlds">Bigger open worlds</label><br>
+        
+        <input id="New IP's" type="checkbox" value="New IP's">
+        <label for="New IP's">New IP's</label><br>
+        
+        <input id="More storytelling" type="checkbox" value="More storytelling">
+        <label for="More storytelling">More storytelling</label><br>
+        
+        <input id="Different modes" type="checkbox" value="Different modes">
+        <label for="Different modes">Different modes</label><br>
+        
+        <input id="More intelligent AI" type="checkbox" value="More intelligent AI">
+        <label for="More intelligent AI">More intelligent AI</label><br>
+        
+        <input id="Microtransactions" type="checkbox" value="Microtransactions">
+        <label for="Microtransactions">Microtransactions</label><br>
+        
+        <input id="More remakes" type="checkbox" value="More remakes">
+        <label for="More remakes">More remakes</label><br><br>
+        
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea id="comments"  placeholder="Enter your comments here..." rows="4" cols="90" ></textarea>
+        
+        <input id="submit" type="submit" value="Submit">
+      </div>    
+    </form>
+  </body>
+</html>
